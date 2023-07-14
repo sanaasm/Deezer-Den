@@ -1,0 +1,36 @@
+main {
+  outline: solid green 1px;
+  display:flex;
+  padding: 5px;
+}
+
+aside {
+  color: #fff;
+  width: 250px;
+  padding-left: 20px;
+  height: 100vh;
+  background-color: red;
+  float: left;
+}
+
+aside a {
+  display: block;
+  padding: 20px;
+}
+
+section {
+  margin-left: 10px;
+}
+
+#search{
+  width: 300px;
+}
+
+#search-button{
+  width: 100px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
