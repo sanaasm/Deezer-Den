@@ -34,3 +34,12 @@ section {
   position: relative;
   display: inline-block;
 }
+
+/* for glide slides */
+.glide {
+  display: flex;
+}
+
+.glide_slide {
+  align-content: center ;
+}
