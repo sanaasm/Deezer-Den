@@ -1,10 +1,11 @@
 html{
-  background-color: rgb(49, 47, 47);
+  background-color: rgb(65, 62, 62);
   padding: 8px;
+  margin: 15px;
 }
 
 h1{
-  background-color: rgb(49, 47, 47) ;
+  background-color: rgb(65, 62, 62) ;
   color: white;
   text-align: center;
   padding-bottom: 5px;
@@ -15,7 +16,7 @@ main {
   display:flex;
   padding: 12px;
   padding-bottom: 100px;
-  background-color: rgb(49, 47, 47);
+  background-color: rgb(65, 62, 62);
   color: white;
   max-width: 1335px;
   outline: solid rgb(128, 52, 104) 9px;
@@ -27,7 +28,7 @@ aside {
   width: 250px;
   padding-left: 20px;
   height: 100vh;
-  background-color: rgb(210, 223, 127);
+  background-color: #feff94;
   float: left;
   color: black;
   outline: solid rgb(128, 52, 104) 9px;
@@ -53,7 +54,7 @@ section {
 
 #search-button{
   width: 200px;
-  background-color:rgb(210, 223, 127) ;
+  background-color:#feff94 ;
   outline: solid rgb(128, 52, 104) 3px;
   margin-top: 10px;
   padding-bottom: 2px;
@@ -83,6 +84,8 @@ section {
  
 h2 {
   padding-top: 10px;
+  text-decoration: underline;
+  text-align: center;
   }
 
 .search-container {
