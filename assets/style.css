@@ -69,4 +69,8 @@ section {
 
 h2 {
   padding-top: 10px;
+  }
+.search-container {
+  display: flex;
+  align-items: center;
 }
