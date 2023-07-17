@@ -54,7 +54,14 @@ section {
 
 #search-button{
   width: 200px;
+<<<<<<< HEAD
   background-color:#feff94 ;
+=======
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  background-color:rgb(210, 223, 127) ;
+>>>>>>> main
   outline: solid rgb(128, 52, 104) 3px;
   margin-top: 10px;
   padding-bottom: 2px;
@@ -81,10 +88,15 @@ section {
 .glide_slide {
   align-content: center ;
 }
+<<<<<<< HEAD
  
 h2 {
   padding-top: 10px;
   text-decoration: underline;
+=======
+h2 {
+  padding-top: 10px;
+>>>>>>> main
   text-align: center;
   }
 
