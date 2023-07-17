@@ -1,7 +1,25 @@
+html{
+  background-color: rgb(49, 47, 47);
+  padding: 8px;
+}
+
+h1{
+  background-color: rgb(49, 47, 47) ;
+  color: white;
+  text-align: center;
+  padding-bottom: 5px;
+  outline: solid rgb(128, 52, 104) 9px;
+}
 main {
-  outline: solid green 1px;
+  
   display:flex;
   padding: 5px;
+  padding-bottom: 200px;
+  background-color: rgb(49, 47, 47);
+  color: white;
+  max-width: 1335px;
+  outline: solid rgb(128, 52, 104) 9px;
+  margin-left: 265px;
 }
 
 aside {
@@ -9,9 +27,13 @@ aside {
   width: 250px;
   padding-left: 20px;
   height: 100vh;
-  background-color: red;
+  background-color: rgb(210, 223, 127);
   float: left;
+  color: black;
+  outline: solid rgb(128, 52, 104) 9px;
+
 }
+
 
 aside a {
   display: block;
@@ -23,13 +45,38 @@ section {
 }
 
 #search{
-  width: 300px;
+  width: 900px;
+  outline: solid rgb(128, 52, 104) 3px;
+  margin-top: 10px;
+  margin-left: 20px;
 }
 
 #search-button{
-  width: 100px;
+  width: 200px;
+  background-color:rgb(210, 223, 127) ;
+  outline: solid rgb(128, 52, 104) 3px;
 }
 
+.row-container {
+  padding-left: 20px;
+
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* for glide slides */
+.glide {
+  display: flex;
+}
+
+.glide_slide {
+  align-content: center ;
+h2 {
+  padding-top: 10px;
+  }
 .search-container {
   display: flex;
   align-items: center;
