@@ -55,6 +55,8 @@ section {
   width: 200px;
   background-color:rgb(210, 223, 127) ;
   outline: solid rgb(128, 52, 104) 3px;
+  margin-top: 10px;
+  padding-bottom: 2px;
 }
 
 .row-container {
