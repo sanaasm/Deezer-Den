@@ -7,11 +7,41 @@ const cleanSearch = (searchTerm) => {
   return str;
 };
 
-//Working on api
-const search = async (searchTerm) => {
-  const url = `https://deezerdevs-deezer.p.rapidapi.com/artist/${cleanSearch(
+//Working on api,
+// atm has a 2nd parameter to check search type later this type variable will be decided by the val of the dropdown.
+const search = async (searchTerm, type) => {
+  const artistUrl = `https://deezerdevs-deezer.p.rapidapi.com/artist/${cleanSearch(
     searchTerm
   )}`;
+
+  const trackUrl = `https://deezerdevs-deezer.p.rapidapi.com/track/${cleanSearch(
+    searchTerm
+  )}`;
+
+  const albumUrl = `https://deezerdevs-deezer.p.rapidapi.com/album/${cleanSearch(
+    searchTerm
+  )}`;
+
+  // cant reassign const url. AND CONST IS NEEDED FOR FETCH.
+let wrapperUrl
+  switch (type) {
+    case "artist":
+      wrapperUrl = artistUrl;
+      break;
+    case "album":
+      wrapperUrl = albumUrl;
+      break;
+    case "track":
+      wrapperUrl = trackUrl;
+      break;
+
+    default:
+      break;
+  }
+
+  const url = wrapperUrl;
+
+
   const options = {
     method: "GET",
     headers: {
@@ -23,34 +53,54 @@ const search = async (searchTerm) => {
   try {
     const response = await fetch(url, options);
     const result = await response.json();
+
+    if (!response.ok) {
+      try {
+        response = await fetch(trackUrl, options);
+        result = await response.json();
+        if (!response.ok) {
+          try {
+            response = await fetch(albumUrl, options);
+            result = await response.json();
+          } catch (error) {
+            console.log(error);
+          }
+        }
+      } catch (error) {
+        console.error(error);
+      }
+    }
+
     console.log(result);
-    $('.row-container').append(getArtistElement(result));
+    // ATM it appends to the row container class, however it does not use the columns.
+    $(".row.container").append(await getCardElement(result));
   } catch (error) {
     console.error(error);
   }
 };
 
-const getArtistElement = async (data) => {
+const getCardElement = async (data) => {
   console.log(data);
-  let element = $(`<div class="arist-card">
+  let element = $(`<div class="card">
   <a href="">
-      <h2>Artist Name</h2>
-      <img src="" alt="artist name">
+      <h2>Card Name</h2>
+      <img src="" alt="card image">
   </a>
   
 </div>`);
-  element.find('h2').text(data["name"]);
-  element.find(`image`).attr('src' ,data["picture_xl"]);
+  element.find("h2").text(data["name"]);
+  element.find(`img`).attr("src", data["picture"]);
+  element.find(`a`).attr("href", data["link"]);
+  element.find(`a`).css("color", "inherit");
+  element.find(`a`).css("text-decoration", "inherit");
+  console.log(element);
   return element;
 };
-
-// search("beyonce");
-// search("daft-punk");
 
 let startSearch = () => {
   let st = cleanSearch($("#search").val());
   console.log(st);
-  search(st);
+  search(st,'album');
 };
 
 $("#search-button").on("click", startSearch);
