@@ -30,7 +30,7 @@ section {
   width: 100px;
 }
 
-.dropdown {
-  position: relative;
-  display: inline-block;
+.search-container {
+  display: flex;
+  align-items: center;
 }
