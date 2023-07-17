@@ -53,6 +53,9 @@ section {
 
 #search-button{
   width: 200px;
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
   background-color:rgb(210, 223, 127) ;
   outline: solid rgb(128, 52, 104) 3px;
 }
@@ -74,8 +77,10 @@ section {
 
 .glide_slide {
   align-content: center ;
+}
 h2 {
   padding-top: 10px;
+  text-align: center;
   }
 .search-container {
   display: flex;
