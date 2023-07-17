@@ -69,6 +69,13 @@ section {
   display: inline-block;
 }
 
+/* for glide slides */
+.glide {
+  display: flex;
+}
+
+.glide_slide {
+  align-content: center ;
 h2 {
   padding-top: 10px;
   }
