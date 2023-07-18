@@ -19,7 +19,7 @@ main {
 
   padding: 5px;
   padding-bottom: 200px;
-  background: radial-gradient(circle, rgba(8,0,0,1) 0%, rgb(63, 38, 65) 90%, rgba(8,0,0,1) 100%)
+  background: radial-gradient(circle, rgba(8,0,0,1) 0%, rgb(63, 38, 65) 90%, rgba(8,0,0,1) 100%);
 
   color: white;
   max-width: 100%;
