@@ -1,14 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <!-- Stylesheet for glide feature -->
+    <link rel="stylesheet" href="./assets/glide.core.css">
+    <!-- Stylesheet for glide feature -->
+    <link rel="stylesheet" href="./assets/glide.theme.css">
+    <!-- Normal stylesheet -->
     <link rel="stylesheet" href="./assets/style.css"/>
     <title>Searchs</title>
-</head>
-<body>
-    
+  </head>
+  <body>
 
-    
-</body>
+    <h1>Cool Music Title </h1>
+    <aside>
+
+ 
+      <h2 class = > Search History </h2>
+      <a>1</a>
+      <a>2</a>
+      <a>3</a>
+      <a>4</a>
+      <a>5</a>
+  
+      <h2> Search History </h2>
+      <ol id="search-history-container">
+      </ol>
+  
+    </aside>
+  
+<main>
+    <section class="row container">
+      <div class="search-container">
+        <!-- Search button and dropdown menu -->
+          <input placeholder="Search" id="search" class="dropdownMenu">
+          <button id="search-button">Search</button>
+          <select id="dropdown">
+            <option value="" disabled selected> Select a filter...</option>
+            <option value="artist">Artist</option>
+            <option value="album">Album</option>
+            <option value="track">Song</option>
+          </select>
+        </div>
+  
+
+    <section id="search-results"></section>
+  </main>
+
+
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.min.js"
+      integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+      crossorigin="anonymous"
+    ></script>
+    <!-- JS link for glide feature -->
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+    <!-- add to scipt.js file later, only working in html at the moment 7/14/23 RW -->
+    <script>
+      const config = {
+        type: "carousel",
+        startAt: 0,
+        perView: 3,
+        breakpoints: {
+          1000: {
+            perView: 2,
+          },
+          900: {
+            perView: 1,
+          },
+        },
+      };
+      new Glide(".glide", config).mount();
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+    <script src="./assets/displaySearch.js"></script>
+  </body>
 </html>
