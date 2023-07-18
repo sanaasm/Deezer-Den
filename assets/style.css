@@ -16,9 +16,11 @@ h1{
 }
 main {
   display:flex;
+
   padding: 5px;
   padding-bottom: 200px;
-  background: radial-gradient(circle, rgba(8,0,0,1) 0%, rgb(63, 38, 65) 90%, rgba(8,0,0,1) 100%);
+  background: radial-gradient(circle, rgba(8,0,0,1) 0%, rgb(63, 38, 65) 90%, rgba(8,0,0,1) 100%)
+
   color: white;
   max-width: 100%;
   min-height: 100vh;
@@ -62,6 +64,8 @@ section {
   margin-right: 20px;
   background-color:rgb(210, 223, 127) ;
   outline: solid rgb(128, 52, 104) 3px;
+  margin-top: 10px;
+  padding-bottom: 2px;
 }
 
 #dropdown {
@@ -73,9 +77,12 @@ section {
 
 }
 
-.dropdown {
+#dropdown {
   position: relative;
   display: inline-block;
+  margin-top: 10px;
+  padding-bottom: 2px;
+  outline: solid rgb(128, 52, 104) 5px;
 }
 
 /* for glide slides */
@@ -99,3 +106,4 @@ h2 {
   display: flex;
   align-items: center;
 }
+
