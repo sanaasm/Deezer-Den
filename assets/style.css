@@ -13,8 +13,8 @@ h1{
 main {
   
   display:flex;
-  padding: 5px;
-  padding-bottom: 200px;
+  padding: 12px;
+  padding-bottom: 100px;
   background-color: rgb(49, 47, 47);
   color: white;
   max-width: 1335px;
@@ -58,6 +58,8 @@ section {
   margin-right: 20px;
   background-color:rgb(210, 223, 127) ;
   outline: solid rgb(128, 52, 104) 3px;
+  margin-top: 10px;
+  padding-bottom: 2px;
 }
 
 .row-container {
@@ -65,9 +67,12 @@ section {
 
 }
 
-.dropdown {
+#dropdown {
   position: relative;
   display: inline-block;
+  margin-top: 10px;
+  padding-bottom: 2px;
+  outline: solid rgb(128, 52, 104) 5px;
 }
 
 /* for glide slides */
@@ -78,11 +83,14 @@ section {
 .glide_slide {
   align-content: center ;
 }
+
 h2 {
   padding-top: 10px;
   text-align: center;
   }
+
 .search-container {
   display: flex;
   align-items: center;
 }
+
