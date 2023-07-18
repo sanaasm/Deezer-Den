@@ -57,13 +57,12 @@ section {
 #search{
   width: 900px;
   outline: solid rgb(128, 52, 104) 3px;
-  margin-top: 30px;
+  margin-top: 10px;
   margin-left: 20px;
 }
 
 #search-button{
   width: 200px;
-  margin-top: 30px;
   margin-left: 20px;
   margin-right: 20px;
   background-color:rgb(210, 223, 127) ;
@@ -116,3 +115,6 @@ h2 {
   align-items: center;
 }
 
+.card {
+  color: white;
+}
