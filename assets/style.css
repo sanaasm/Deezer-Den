@@ -1,7 +1,7 @@
 html{
   /* background: rgb(8,0,0); */
   background: linear-gradient(to bottom, rgba(8,0,0,1) 0%, rgba(128,52,104,1) 35%, rgba(18,0,0,1) 100%);
-  padding: 8px;
+  padding: 12px;
 }
 
 h1{
@@ -11,21 +11,26 @@ h1{
   text-align: center;
   padding: 200px;
   /* padding-bottom: 5px; */
-  outline: solid rgb(128, 52, 104) 9px;
   text-shadow: 3px 3px 6px rgb(128, 52, 104);
+  border: 12px solid black;
+  outline-style: outset;
+  outline-color: grey;
+  outline: solid rgb(128, 52, 104) 9px;
 }
 main {
   display:flex;
-
   padding: 5px;
   padding-bottom: 200px;
   background: radial-gradient(circle, rgba(8,0,0,1) 0%, rgb(63, 38, 65) 90%, rgba(8,0,0,1) 100%);
-
   color: black;
   max-width: 100%;
   min-height: 100vh;
   /* outline: solid #803468 9px; */
   margin-left: 265px;
+  border: 8px solid black;
+  outline-style: outset;
+  outline-color: grey;
+  outline: solid rgb(128, 52, 104) 9px;
 }
 
 .popular {
@@ -37,11 +42,13 @@ aside {
   width: 250px;
   padding-left: 20px;
   min-height: 100vh;
-  background-color: rgb(95, 0, 0);
+  border: 6px solid black;
+  outline-style: outset;
+  outline-color: grey;
   float: left;
   color: black;
-  /* outline: solid rgb(128, 52, 104) 9px; */
-
+  outline: solid rgb(128, 52, 104) 9px; 
+  background-color:rgb(238, 245, 186) ;
 }
 
 
@@ -56,33 +63,32 @@ section {
 
 #search{
   width: 900px;
-  outline: solid rgb(128, 52, 104) 3px;
   margin-top: 10px;
   margin-left: 20px;
+  outline: solid rgb(128, 52, 104) 5px;
 }
 
 #search-button{
   width: 200px;
   margin-left: 20px;
   margin-right: 20px;
-  background-color:rgb(210, 223, 127) ;
-  outline: solid rgb(128, 52, 104) 3px;
+  background-color:rgb(238, 245, 186);
   margin-top: 10px;
   padding-bottom: 2px;
+  outline: solid rgb(128, 52, 104) 5px;
 }
 
 #search-results {
   margin-top: 30px;
-
 }
 
 #dropdown {
   margin-top: 30px;
+  background-color:rgb(238, 245, 186);
 }
 
 .row-container {
   padding-left: 20px;
-
 }
 
 #dropdown {
