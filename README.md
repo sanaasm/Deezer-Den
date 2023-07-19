@@ -1,4 +1,5 @@
-# Music Search
+
+# DeezerDen
 This is an application that allows the user to search and access information for artists, albums, and songs and provides them with a link to access that artist, album, or song on deezer.com. 
 
 ## Authors
@@ -24,22 +25,20 @@ This is an application that allows the user to search and access information for
 
 ## FAQ
 
-#### Question 1
+#### What is DeezerDen
+A: DeezerDen is an application that enables users to easily search and access information about their favorite artists, albums, and songs. It also provides convenient links to access the artists, albums, or songs on deezer.com.
 
-Answer 1
+#### Is DeezerDen free to use?
+A: Yes, DeezerDen is absolutely free to download and use. There are no hidden charges or subscription fees.
 
-#### Question 2
+#### Is the content on DeezerDen up-to-date?
+A: DeezerDen relies on the information available through its database and the deezer.com API. The app does its best to keep the information current, but there might be occasional delays in updating new releases or changes in the music library.
 
-Answer 2
-
-
+#### Can I share my favorite artists, albums, or songs with friends?
+A: No, unfortunately you can not yet share your search results from DeezerDen with your friends. In the future we hope to implement this feature. 
 ## Deployment
 
-To deploy this project run
-
-```bash
-  npm run deploy
-```
+To deploy this project [click here](....)
 
 
 ## Screenshots
@@ -50,3 +49,4 @@ To deploy this project run
 ## Demo
 
 Insert gif or link to demo
+
