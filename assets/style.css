@@ -109,6 +109,12 @@ section {
   outline: solid rgb(128, 52, 104) 5px;
 }
 
+h3{
+  text-align: center;
+  color: white;
+  font-family: 'Chakra Petch', sans-serif;
+}
+
 /* for glide slides */
 .glide {
   display: flex;
