@@ -4,6 +4,11 @@ html{
   padding: 12px;
 }
 
+#search-container {
+  display: flex;
+
+}
+
 h1{
   background-size: cover;
   background-repeat: no-repeat;
@@ -26,6 +31,7 @@ h1{
   outline-color: grey;
   outline: solid rgb(128, 52, 104) 9px;
 }
+
 main {
   display:flex;
   padding: 5px;
@@ -51,8 +57,6 @@ aside {
   width: 250px;
   padding-left: 20px;
   height: fit-content;
-
-  
   border: 6px solid black;
   outline-style: outset;
   outline-color: grey;
@@ -61,7 +65,6 @@ aside {
   outline: solid rgb(128, 52, 104) 9px; 
   background-color:rgb(238, 245, 186) ;
 }
-
 
 aside a {
   display: block;
@@ -81,6 +84,8 @@ section {
 }
 
 #search-button{
+  display: inline;
+  flex-wrap: wrap;
   width: 200px;
   margin-left: 20px;
   margin-right: 20px;
@@ -97,6 +102,7 @@ section {
 
 #dropdown {
   margin-top: 30px;
+  flex-wrap: wrap;
   background-color:rgb(238, 245, 186);
 }
 
@@ -164,23 +170,17 @@ img:hover {
 
 a:link { text-decoration: none; }
 
-
 a:visited { text-decoration: none; }
 
-
 a:hover { text-decoration: none; }
-
 
 a:active { text-decoration: none; }
 
 ol:link { text-decoration: none; }
 
-
 ol:visited { text-decoration: none; }
 
-
 ol:hover { text-decoration: none; }
-
 
 ol:active { text-decoration: none; }
 
