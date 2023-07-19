@@ -21,18 +21,22 @@ main {
   padding-bottom: 200px;
   background: radial-gradient(circle, rgba(8,0,0,1) 0%, rgb(63, 38, 65) 90%, rgba(8,0,0,1) 100%);
 
-  color: white;
+  color: black;
   max-width: 100%;
   min-height: 100vh;
   /* outline: solid #803468 9px; */
   margin-left: 265px;
 }
 
+.popular {
+  color: white;
+}
+
 aside {
   color: #fff;
   width: 250px;
   padding-left: 20px;
-  height: 100vh;
+  min-height: 100vh;
   background-color: rgb(95, 0, 0);
   float: left;
   color: black;
@@ -53,19 +57,23 @@ section {
 #search{
   width: 900px;
   outline: solid rgb(128, 52, 104) 3px;
-  margin-top: 30px;
+  margin-top: 10px;
   margin-left: 20px;
 }
 
 #search-button{
   width: 200px;
-  margin-top: 30px;
   margin-left: 20px;
   margin-right: 20px;
   background-color:rgb(210, 223, 127) ;
   outline: solid rgb(128, 52, 104) 3px;
   margin-top: 10px;
   padding-bottom: 2px;
+}
+
+#search-results {
+  margin-top: 30px;
+
 }
 
 #dropdown {
@@ -105,5 +113,9 @@ h2 {
 .search-container {
   display: flex;
   align-items: center;
+  padding-bottom: 15px;
 }
 
+.card {
+  color: rgb(22, 22, 22);
+}
