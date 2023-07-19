@@ -5,7 +5,7 @@ html{
 }
 
 #search-container {
-  flex-wrap: wrap;
+  display: flex;
 
 }
 
@@ -79,6 +79,7 @@ section {
   margin-top: 10px;
   margin-left: 20px;
   outline: solid rgb(128, 52, 104) 5px;
+  font-family: 'Chakra Petch', sans-serif;
 }
 
 #search-button{
@@ -90,6 +91,7 @@ section {
   margin-top: 10px;
   padding-bottom: 2px;
   outline: solid rgb(128, 52, 104) 5px;
+  font-family: 'Chakra Petch', sans-serif;
 }
 
 #search-results {
@@ -111,6 +113,18 @@ section {
   margin-top: 10px;
   padding-bottom: 2px;
   outline: solid rgb(128, 52, 104) 5px;
+  font-family: 'Chakra Petch', sans-serif;
+}
+
+h2{
+  padding-right: 10px;
+  font-family: 'Chakra Petch', sans-serif;
+}
+
+h3{
+  text-align: center;
+  color: white;
+  font-family: 'Chakra Petch', sans-serif;
 }
 
 /* for glide slides */
@@ -192,12 +206,14 @@ background: radial-gradient(circle, rgba(8,0,0,1) 0%, rgb(63, 38, 65) 90%, rgba(
   }
 } */
 
-/* @media screen and (max-width: 768px) {
+ /* @media screen and (max-width: 768px) {
   nav {
     background-color: #bb8588;
   }
-}
-
-@media screen and (max-width: 576px) {
-  
 } */
+
+/* @media screen and (max-width: 576px) {
+  #search-container {
+
+  }
+}  */
