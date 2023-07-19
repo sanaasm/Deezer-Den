@@ -76,6 +76,7 @@ section {
   margin-top: 10px;
   margin-left: 20px;
   outline: solid rgb(128, 52, 104) 5px;
+  font-family: 'Chakra Petch', sans-serif;
 }
 
 #search-button{
@@ -86,6 +87,7 @@ section {
   margin-top: 10px;
   padding-bottom: 2px;
   outline: solid rgb(128, 52, 104) 5px;
+  font-family: 'Chakra Petch', sans-serif;
 }
 
 #search-results {
@@ -107,10 +109,12 @@ section {
   margin-top: 10px;
   padding-bottom: 2px;
   outline: solid rgb(128, 52, 104) 5px;
+  font-family: 'Chakra Petch', sans-serif;
 }
 
 h2{
   padding-right: 10px;
+  font-family: 'Chakra Petch', sans-serif;
 }
 
 h3{
