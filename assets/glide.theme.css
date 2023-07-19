@@ -19,7 +19,7 @@
   .glide__arrow:focus {
     outline: none; }
   .glide__arrow:hover {
-    border-color: white; }
+    border-color: solid rgb(128, 52, 104) 9px; }
   .glide__arrow--left {
     left: 2em; }
   .glide__arrow--right {
