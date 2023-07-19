@@ -43,10 +43,10 @@ To deploy this project [click here](....)
 
 ## Screenshots
 
-![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+![App Screenshot](./assets/images/deezerdenpreview.png)
 
 
 ## Demo
 
-Insert gif or link to demo
+![](./assets/images/2023-07-19-12-43-13.gif)
 
