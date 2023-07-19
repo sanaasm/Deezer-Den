@@ -14,7 +14,8 @@ h1{
   background-repeat: no-repeat;
   background-position: center center;
   background-image: linear-gradient(to bottom, rgba(8,0,0,0.52) 0%, rgba(128,52,104,0.52), rgba(18,0,0,0.52)), url("./images/group-project-header.jpg");
-
+  text-decoration: underline;
+  text-decoration-color:rgb(238, 245, 186);
   
   /* background: (to bottom, rgba(8,0,0,1) 0%, rgba(128,52,104,1) 35%, rgba(18,0,0,1) 100%); */
   color: white;
@@ -84,6 +85,7 @@ section {
 
 #search-button{
   display: inline;
+  flex-wrap: wrap;
   width: 200px;
   margin-left: 20px;
   margin-right: 20px;
@@ -100,6 +102,7 @@ section {
 
 #dropdown {
   margin-top: 30px;
+  flex-wrap: wrap;
   background-color:rgb(238, 245, 186);
 }
 
@@ -198,22 +201,3 @@ ol {
 body{
 background: radial-gradient(circle, rgba(8,0,0,1) 0%, rgb(63, 38, 65) 90%, rgba(8,0,0,1) 100%);
 }
-
-/* @media screen and (max-width: 992px) {
-  #search-button {
-
-
-  }
-} */
-
- /* @media screen and (max-width: 768px) {
-  nav {
-    background-color: #bb8588;
-  }
-} */
-
-/* @media screen and (max-width: 576px) {
-  #search-container {
-
-  }
-}  */
