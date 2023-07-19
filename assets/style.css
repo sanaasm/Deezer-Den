@@ -124,14 +124,52 @@ h2 {
   font-family: 'Chakra Petch', sans-serif;
   }
 
-  h4 {
-    font-family: 'Varela', sans-serif;
-    margin-top: 5px;
-  }
+h4 { 
+  font-family: 'Varela', sans-serif;
+  color: white;
+  margin-top: 5px;
+}
 
-  ol {
-    font-family: 'Varela', sans-serif;
-  }
+button:hover {
+  background-color: antiquewhite;
+  opacity: .80;
+}
+
+select:hover {
+  background-color: antiquewhite;
+  opacity: .80;
+}
+
+img:hover {
+  background-color: gray;
+  opacity: .5;
+}
+
+a:link { text-decoration: none; }
+
+
+a:visited { text-decoration: none; }
+
+
+a:hover { text-decoration: none; }
+
+
+a:active { text-decoration: none; }
+
+ol:link { text-decoration: none; }
+
+
+ol:visited { text-decoration: none; }
+
+
+ol:hover { text-decoration: none; }
+
+
+ol:active { text-decoration: none; }
+
+ol {
+  font-family: 'Varela', sans-serif;
+}
 
 .search-container {
   display: flex;
