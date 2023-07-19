@@ -4,6 +4,11 @@ html{
   padding: 12px;
 }
 
+#search-container {
+  flex-wrap: wrap;
+
+}
+
 h1{
   background-size: cover;
   background-repeat: no-repeat;
@@ -25,6 +30,7 @@ h1{
   outline-color: grey;
   outline: solid rgb(128, 52, 104) 9px;
 }
+
 main {
   display:flex;
   padding: 5px;
@@ -50,8 +56,6 @@ aside {
   width: 250px;
   padding-left: 20px;
   height: fit-content;
-
-  
   border: 6px solid black;
   outline-style: outset;
   outline-color: grey;
@@ -60,7 +64,6 @@ aside {
   outline: solid rgb(128, 52, 104) 9px; 
   background-color:rgb(238, 245, 186) ;
 }
-
 
 aside a {
   display: block;
@@ -79,6 +82,7 @@ section {
 }
 
 #search-button{
+  display: inline;
   width: 200px;
   margin-left: 20px;
   margin-right: 20px;
@@ -149,23 +153,17 @@ img:hover {
 
 a:link { text-decoration: none; }
 
-
 a:visited { text-decoration: none; }
 
-
 a:hover { text-decoration: none; }
-
 
 a:active { text-decoration: none; }
 
 ol:link { text-decoration: none; }
 
-
 ol:visited { text-decoration: none; }
 
-
 ol:hover { text-decoration: none; }
-
 
 ol:active { text-decoration: none; }
 
@@ -186,3 +184,20 @@ ol {
 body{
 background: radial-gradient(circle, rgba(8,0,0,1) 0%, rgb(63, 38, 65) 90%, rgba(8,0,0,1) 100%);
 }
+
+/* @media screen and (max-width: 992px) {
+  #search-button {
+
+
+  }
+} */
+
+/* @media screen and (max-width: 768px) {
+  nav {
+    background-color: #bb8588;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  
+} */
