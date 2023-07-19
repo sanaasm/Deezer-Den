@@ -41,7 +41,9 @@ aside {
   color: #fff;
   width: 250px;
   padding-left: 20px;
-  min-height: 100vh;
+  height: fit-content;
+
+  
   border: 6px solid black;
   outline-style: outset;
   outline-color: grey;
@@ -124,4 +126,8 @@ h2 {
 
 .card {
   color: rgb(22, 22, 22);
+}
+
+body{
+background: radial-gradient(circle, rgba(8,0,0,1) 0%, rgb(63, 38, 65) 90%, rgba(8,0,0,1) 100%);
 }
