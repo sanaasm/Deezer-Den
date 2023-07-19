@@ -5,8 +5,8 @@ html{
 }
 
 h1{
-  background-image: red, url(./images/group-project-header.jpg);
-
+  background-image: red, url("./images/group-project-header.jpg");
+  /* background: (to bottom, rgba(8,0,0,1) 0%, rgba(128,52,104,1) 35%, rgba(18,0,0,1) 100%); */
   color: white;
   /* Google Fonts */
   font-family: 'Chakra Petch', sans-serif;
