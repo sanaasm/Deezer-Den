@@ -38,7 +38,7 @@ A: DeezerDen relies on the information available through its database and the de
 A: No, unfortunately you can not yet share your search results from DeezerDen with your friends. In the future we hope to implement this feature. 
 ## Deployment
 
-To deploy this project [click here](....)
+To deploy this project [click here]((https://mocha-matcha.github.io/group-project1/))
 
 
 ## Screenshots
