@@ -4,7 +4,7 @@ html{
   padding: 12px;
 }
 
-#search-container {
+.search-container {
   display: flex;
 
 }
@@ -198,6 +198,43 @@ ol {
   color: rgb(22, 22, 22);
 }
 
+
 body{
 background: radial-gradient(circle, rgba(8,0,0,1) 0%, rgb(63, 38, 65) 90%, rgba(8,0,0,1) 100%);
+}
+
+
+@media screen and (max-width: 767px) {
+
+  html {
+    padding: 6px;
+  }
+
+  h1 {
+    font-size: 40px;
+    padding: 100px 12px;
+  }
+
+  main {
+    padding-bottom: 50px; 
+    margin-left: 0; 
+  }
+
+  aside {
+    float: none;
+    width: 100%; 
+  }
+
+  #search{
+    margin-left: 0;
+    width: 100%;
+  }
+  .search-container {
+    justify-content: center;
+    align-self: center;
+  }
+  #search-button {
+    margin: 0;
+    margin-top: 5px;
+  }
 }

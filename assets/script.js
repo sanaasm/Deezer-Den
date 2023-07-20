@@ -1,5 +1,5 @@
 var searches = [];
-let appId = "54521986645452198664";
+// const appId = "54521986645452198664";
 const cleanSearch = (searchTerm) => {
   let str = searchTerm.replace(/ /g, "-");
   return str;
