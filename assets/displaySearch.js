@@ -1,18 +1,10 @@
-//new Glide('.glide').mount()
-
 var searches = [];
-let appId = "54521986645452198664";
-const cleanSearch = (searchTerm) => {
-  let str = searchTerm.replace(/ /g, "-");
-  return str;
-};
 
 const clearSearch = () => {
   $("#search-results").empty();
 };
 
-//Working on api,
-// atm has a 2nd parameter to check search type later this type variable will be decided by the val of the dropdown.
+
 const display = async () => {
   console.log("start search");
   clearSearch();
@@ -24,8 +16,6 @@ const display = async () => {
   var format = searchParamsArr[1].split("=").pop();
   console.log(query, format);
 
-
-  // const st = cleanSearch(searchTerm);
   const url = `https://deezerdevs-deezer.p.rapidapi.com/search?q=${query}`;
 
   console.log(url);
@@ -53,9 +43,7 @@ const display = async () => {
   if (formatValue === "artist") {
     let artistId = searchs[0]["artist"]["id"];
     console.log(artistId);
-    // result.filter();
-
-    let artistMatches = searchs.filter((data) => {
+   let artistMatches = searchs.filter((data) => {
       return data["artist"]["id"] === artistId;
     });
 
@@ -102,7 +90,6 @@ const display = async () => {
 
 };
 
-// priotty of dropdown value
 const getCardElement = async (name, smallName, image, link) => {
   let element = $(`<div class="card">
   <a href="">
@@ -125,8 +112,4 @@ const getCardElement = async (name, smallName, image, link) => {
   return element;
 };
 
-// get url strip
-// get format Strip
-
-// search takes the two values
 display();

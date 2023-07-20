@@ -1,5 +1,4 @@
 var searches = [];
-// const appId = "54521986645452198664";
 const cleanSearch = (searchTerm) => {
   let str = searchTerm.replace(/ /g, "-");
   return str;
@@ -9,28 +8,6 @@ const clearHistory = () => {
   $("#search-results").empty();
 };
 
-// priotty of dropdown value
-const getCardElement = async (name, smallName, image, link) => {
-  let element = $(`<div class="card">
-  <a href="">
-  <img src="" alt="card image">
-
-  <h2>Card Name</h2>
-      <h3>Card Name</h3>
-  </a>
-  
-</div>`);
-
-  element.find("h2").text(name);
-  element.find("h3").text(smallName);
-  element.find(`img`).attr("src", image);
-  element.find(`a`).attr("href", link);
-  element.find(`a`).css("color", "inherit");
-  element.find(`a`).css("text-decoration", "inherit");
-
-  console.log(element);
-  return element;
-};
 
 let startSearch = () => {
   let st = cleanSearch($("#search").val());
